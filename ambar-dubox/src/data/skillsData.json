@@ -20,7 +20,7 @@
     {
         "category": "Desarrollo Mobile",
         "skills": [
-            { "name": "React Native", "imageUrl": "/assets/logos/react-native.png" }
+            { "name": "React Native", "imageUrl": "/assets/logos/react.png" }
         ]
     },
     {
@@ -52,7 +52,7 @@
             { "name": "Figma", "imageUrl": "/assets/logos/figma.png" },
             { "name": "Unreal Engine (Básico)", "imageUrl": "/assets/logos/unreal-engine.png" },
             { "name": "Blender (Básico)", "imageUrl": "/assets/logos/blender.png" },
-            { "name": "Google Script (Básico)", "imageUrl": "/assets/logos/google-sheets.png" }
+            { "name": "Google Script (Básico)", "imageUrl": "/assets/logos/gs.png" }
         ]
     }
 ]
