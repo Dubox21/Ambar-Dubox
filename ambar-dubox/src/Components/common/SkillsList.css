@@ -1,0 +1,16 @@
+.skills-list {
+    padding: 20px;
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    margin-bottom: 10px;
+}
+
+.skills-items {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "category": "Desarrollo Frontend",
+        "skills": [
+            { "name": "HTML", "imageUrl": "/assets/logos/html5.png" },
+            { "name": "CSS", "imageUrl": "/assets/logos/css3.png" },
+            { "name": "JavaScript", "imageUrl": "/assets/logos/javascript.png" },
+            { "name": "SASS (Básico)", "imageUrl": "/assets/logos/sass.png" },
+            { "name": "Bootstrap (Básico)", "imageUrl": "/assets/logos/bootstrap.png" }
+        ]
+    },
+    {
+        "category": "Framework y Librerías",
+        "skills": [
+            { "name": "React JS", "imageUrl": "/assets/logos/react.png" },
+            { "name": "Node JS", "imageUrl": "/assets/logos/nodejs.png" },
+            { "name": "Express JS", "imageUrl": "/assets/logos/express.png" }
+        ]
+    },
+    {
+        "category": "Desarrollo Mobile",
+        "skills": [
+            { "name": "React Native", "imageUrl": "/assets/logos/react-native.png" }
+        ]
+    },
+    {
+        "category": "Gestión de Bases de Datos",
+        "skills": [
+            { "name": "MySQL", "imageUrl": "/assets/logos/mysql.png" },
+            { "name": "Firebase", "imageUrl": "/assets/logos/firebase.png" }
+        ]
+    },
+    {
+        "category": "QA y Herramientas",
+        "skills": [
+            { "name": "Cypress", "imageUrl": "/assets/logos/cypress.png" },
+            { "name": "Jira", "imageUrl": "/assets/logos/jira.png" },
+            { "name": "Postman", "imageUrl": "/assets/logos/postman.png" }
+        ]
+    },
+    {
+        "category": "Control de Versiones",
+        "skills": [
+            { "name": "Git", "imageUrl": "/assets/logos/git.png" },
+            { "name": "GitHub", "imageUrl": "/assets/logos/github.png" },
+            { "name": "GitLab", "imageUrl": "/assets/logos/gitlab.png" }
+        ]
+    },
+    {
+        "category": "Otros Conocimientos",
+        "skills": [
+            { "name": "Figma", "imageUrl": "/assets/logos/figma.png" },
+            { "name": "Unreal Engine (Básico)", "imageUrl": "/assets/logos/unreal-engine.png" },
+            { "name": "Blender (Básico)", "imageUrl": "/assets/logos/blender.png" },
+            { "name": "Google Script (Básico)", "imageUrl": "/assets/logos/google-sheets.png" }
+        ]
+    }
+]

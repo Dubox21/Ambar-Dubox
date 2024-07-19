@@ -113,3 +113,21 @@
         font-size: 1.8rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 720px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 2rem;
+    }
+}
