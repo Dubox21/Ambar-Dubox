@@ -1,0 +1,123 @@
+.NavBar {
+    width: 100%;
+    background-color: var(--black);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.NavBar h1 {
+    font-size: 1.5rem;
+    color: var(--fontColorEmphasis);
+    font-family: "Playwrite HR", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.nav-toggle {
+    background: none;
+    color: var(--fontColorEmphasis);
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--black);
+    list-style: none;
+    padding: 100px 0 0 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.nav-menu_visible {
+    transform: translateX(0);
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+@media (min-width: 768px) {
+    .NavBar h1 {
+        font-size: 1.6rem;
+    }
+
+    .nav-menu li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .NavBar {
+        height: 92px;
+        padding: 0 30px;
+    }
+
+    .NavBar h1 {
+        font-size: 25px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0);
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        margin: 0 15px;
+    }
+
+    .nav-menu li a {
+        font-size: 1.8rem;
+    }
+
+    .close-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,25 @@
+:root{
+    --background: #F5F5F5;
+    --white: #fff;
+    --black: #000;
+    --fontColorEmphasis: #FFD700;
+    --grey-light: #F5F5F5;
+    --emerald-green: #50C878;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    font-family: "Kanit", sans-serif;
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
