@@ -50,9 +50,9 @@
         "category": "Otros Conocimientos",
         "skills": [
             { "name": "Figma", "imageUrl": "/assets/logos/figma.png" },
-            { "name": "Unreal Engine (Básico)", "imageUrl": "/assets/logos/unreal-engine.png" },
+            { "name": "UE (Básico)", "imageUrl": "/assets/logos/unreal-engine.png" },
             { "name": "Blender (Básico)", "imageUrl": "/assets/logos/blender.png" },
-            { "name": "Google Script (Básico)", "imageUrl": "/assets/logos/gs.png" }
+            { "name": "G-Scripts (Básico)", "imageUrl": "/assets/logos/gs.png" }
         ]
     }
 ]
