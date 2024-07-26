@@ -4,7 +4,8 @@
 }
 
 .about-me {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     margin: 27px auto;
@@ -38,7 +39,8 @@
 
 @media (min-width: 768px) {
     .about-me {
-        width: 700px;
+        width: 100%;
+        max-width: 700px;
         padding: 40px;
     }
 
@@ -54,7 +56,8 @@
 
 @media (min-width: 1024px) {
     .about-me {
-        width: 1020px;
+        width: 100%;
+        max-width: 1020px;
         padding: 73px;
     }   
     

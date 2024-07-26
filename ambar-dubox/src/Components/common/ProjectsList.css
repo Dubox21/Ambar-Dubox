@@ -1,0 +1,95 @@
+.projects-list {
+    width: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde */
+    padding: 137px 0;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+
+.col-4,
+.col-6,
+.col-12 {
+    flex: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 13% !important; /* Ajusta según tu diseño */
+    height: 60px  !important; 
+    pointer-events: auto; /* Asegura que las flechas sean clicables */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: auto 0 !important;
+}
+
+.icon-large {
+    font-size: 30px;
+    color: var(--fontColorEmphasis);
+}
+
+.icon-large:hover {
+    color: var(--emerald-green);
+}
+
+.carousel-control-next.disabled,
+.carousel-control-prev.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev:not(.disabled),
+.carousel-control-next:not(.disabled) {
+    opacity: 1; /* Opacidad completa si están habilitadas */
+    cursor: pointer; /* Cambia el cursor para indicar que están habilitadas */
+}
+
+@media (min-width: 768px) {
+    .carousel-inner {
+        padding: 200px 0;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 4% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-inner {
+        padding: 178px 0;
+    }
+
+    .container {
+        margin: 0 100px;
+    }
+
+    .row {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .icon-large {
+        font-size: 50px;
+        /* Tamaño más grande para pantallas de escritorio */
+    }
+}

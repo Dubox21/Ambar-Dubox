@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SkillsList from './common/SkillsList';
 import './AboutMe.css';
 
@@ -13,11 +14,12 @@ function AboutMe() {
                         la vida de los usuarios. En este portafolio, podrás explorar algunos de mis trabajos más destacados y conocer más sobre mi
                         enfoque hacia el desarrollo y la tecnología.</p>
                     <p>Además, continúo mejorando mis habilidades a través de diversos cursos y capacitaciones. Puedes ver una lista de mis cursos
-                        y certificaciones <a href='#' className='link'>aquí</a></p>
+                        y certificaciones  <Link to="/under-construction" className="link">aquí</Link>
+                    </p>
                 </div>
                 <div className='about-me-skills'>
                     <h3>Habilidades</h3>
-                        <SkillsList />
+                    <SkillsList />
                 </div>
             </div>
         </div>

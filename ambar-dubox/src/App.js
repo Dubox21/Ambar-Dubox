@@ -1,16 +1,21 @@
 import React from 'react';
-import NavBar from './Components/NavBar.js';
-import Header from './Components/Header.js';
-import AboutMe from './Components/AboutMe.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './Components/NavBar';
+import MainPage from './Components/MainPage';
+import CoursesPage from './Components/CoursesPage';
+import UnderConstruction from './Components/common/UnderConstruction';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <NavBar />
-      <Header />
-      <AboutMe />
-    </div>
-  )
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/under-construction" element={<UnderConstruction />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,54 @@
+.project-item {
+    height: 220px;
+    width: 100%;
+}
+
+.project-item h5 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--fontColorEmphasis);
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-center .logo {
+    color: var(--fontColorEmphasis);
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center a:hover {
+    color: var(--emerald-green) !important;
+}
+
+.text-center .logo svg {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .project-item h5 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .project-item{
+        height: 259px;
+    }
+    .project-item h5 {
+        font-size: 3.5rem;
+    }
+
+    .text-center .logo svg {
+        width: 77px;
+        height: 77px;
+    }
+}

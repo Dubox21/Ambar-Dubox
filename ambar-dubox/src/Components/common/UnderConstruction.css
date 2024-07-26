@@ -1,0 +1,79 @@
+/* UnderConstruction.css */
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: var(--background);
+    text-align: center;
+    color: #333;
+}
+
+.text-container {
+    display: flex;
+    align-items: flex-end;
+    font-size: 4rem;
+    position: relative;
+}
+
+.letter {
+    position: relative;
+    margin-right: 2px; /* Ajusta el espacio entre letras */
+    display: inline-block;
+}
+
+.hammer-container {
+    position: absolute;
+    top: 0; /* Alinea el martillo con la parte superior del contenedor */
+    height: 100%;
+    display: flex;
+    align-items: center; /* Alinea el martillo verticalmente con la letra */
+}
+
+.hammer {
+    font-size: 4rem; /* Ajusta el tamaño del martillo */
+    color: #f0a500;
+    animation: hammer-move 1s steps(1, end) infinite, hammer-shake 0.5s ease-in-out infinite;
+    margin-left: -5rem; /* Ajusta la posición horizontal del martillo */
+}
+
+.dot {
+    font-size: 4rem; /* Ajusta el tamaño del punto */
+    margin-left: 11px; /* Espacio entre el martillo y el punto */
+    color: #f0a500; /* Mismo color que el martillo */
+    animation: dot-blink 0.5s infinite;
+}
+
+@keyframes hammer-move {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px); /* Movimiento hacia arriba */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes hammer-shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Movimiento horizontal del martillo */
+    }
+}
+
+@keyframes dot-blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}

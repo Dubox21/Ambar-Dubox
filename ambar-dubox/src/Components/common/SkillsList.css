@@ -8,8 +8,21 @@
 
 .skills-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33.3%);
     gap: 3px;
+}
+
+.skills-list{
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (min-width: 768px) {
+    .skills-list{
+        width: 100%;
+        max-width: 700px;
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -17,10 +30,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        width: 100%;
+        max-width: 1020px;
     }
 
     .skills-items{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 }

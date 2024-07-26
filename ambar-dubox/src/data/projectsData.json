@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Reseñas de Peliculas",
+        "imageUrl": "/assets/movie-review.png",
+        "urlRepo": "https://movie-reviews-b0ek.onrender.com/library",
+        "urlGit": "https://github.com/Dubox21/movie_reviews",
+        "techs": [
+            "React JS",
+            "Node JS",
+            "Express JS",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "Proximamente",
+        "imageUrl": "/assets/proximamente.png",
+        "urlRepo": "/under-construction",
+        "urlGit": "https://github.com/Dubox21",
+        "techs": [
+            "React JS",
+            "Node JS",
+            "Express JS",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "Proximamente",
+        "imageUrl": "/assets/proximamente.png",
+        "urlRepo": "/under-construction",
+        "urlGit": "https://github.com/Dubox21",
+        "techs": [
+            "React JS",
+            "Node JS",
+            "Express JS",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "Proximamente",
+        "imageUrl": "/assets/proximamente.png",
+        "urlRepo": "/under-construction",
+        "urlGit": "https://github.com/Dubox21",
+        "techs": [
+            "React JS",
+            "Node JS",
+            "Express JS",
+            "MongoDB"
+        ]
+    }
+]
