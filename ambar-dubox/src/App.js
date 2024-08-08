@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar';
 import MainPage from './Components/MainPage';
 import CoursesPage from './Components/CoursesPage';
 import UnderConstruction from './Components/common/UnderConstruction';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
