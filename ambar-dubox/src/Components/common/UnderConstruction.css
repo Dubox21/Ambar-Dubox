@@ -13,13 +13,13 @@
 .text-container {
     display: flex;
     align-items: flex-end;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
 }
 
 .letter {
     position: relative;
-    margin-right: 2px; /* Ajusta el espacio entre letras */
+    margin-right: 5px; /* Ajusta el espacio entre letras */
     display: inline-block;
 }
 
@@ -32,15 +32,15 @@
 }
 
 .hammer {
-    font-size: 4rem; /* Ajusta el tamaño del martillo */
+    font-size: 3rem; /* Ajusta el tamaño del martillo */
     color: #f0a500;
     animation: hammer-move 1s steps(1, end) infinite, hammer-shake 0.5s ease-in-out infinite;
-    margin-left: -5rem; /* Ajusta la posición horizontal del martillo */
+    margin-left: -6rem; /* Ajusta la posición horizontal del martillo */
 }
 
 .dot {
-    font-size: 4rem; /* Ajusta el tamaño del punto */
-    margin-left: 11px; /* Espacio entre el martillo y el punto */
+    font-size: 3rem; /* Ajusta el tamaño del punto */
+    margin-left: 3px; /* Espacio entre el martillo y el punto */
     color: #f0a500; /* Mismo color que el martillo */
     animation: dot-blink 0.5s infinite;
 }
@@ -75,5 +75,21 @@
     }
     50% {
         opacity: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-container {
+        font-size: 4rem;
+    }
+
+    .hammer {
+        font-size: 4rem; /* Ajusta el tamaño del martillo */
+        margin-left: -5rem; /* Ajusta la posición horizontal del martillo */
+    }
+    
+    .dot {
+        font-size: 4rem; /* Ajusta el tamaño del punto */
+        margin-left: 11px; /* Espacio entre el martillo y el punto */
     }
 }

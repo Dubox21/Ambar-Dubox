@@ -34,17 +34,5 @@
             "Express JS",
             "MongoDB"
         ]
-    },
-    {
-        "title": "Proximamente",
-        "imageUrl": "/assets/proximamente.png",
-        "urlRepo": "/under-construction",
-        "urlGit": "https://github.com/Dubox21",
-        "techs": [
-            "React JS",
-            "Node JS",
-            "Express JS",
-            "MongoDB"
-        ]
     }
 ]

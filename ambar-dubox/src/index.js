@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; 
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root'); // Establece el elemento raíz de tu aplicación
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

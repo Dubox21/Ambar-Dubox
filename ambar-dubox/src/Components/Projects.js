@@ -8,8 +8,8 @@ function Projects() {
         <div className='projects-container'>
             <h2>Proyectos</h2>
             <div className='projects'>
+                <StarsBg />
                 <div className='project'>
-                    <StarsBg />
                     <ProjectsList />
                 </div>
             </div>

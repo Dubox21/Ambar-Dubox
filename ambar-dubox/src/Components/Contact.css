@@ -1,0 +1,180 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 0 5px;
+}
+
+.contact p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-textarea {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    border: 1px solid var(--emerald-green);
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--emerald-green);
+}
+
+.form-schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.form-schedule-option input[type="radio"] {
+    margin-right: 5px;
+    appearance: none;
+    /* Oculta el radio button nativo */
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--emerald-green);
+    /* Cambia el color del borde */
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 0 2px transparent;
+}
+
+.form-schedule-option input[type="radio"]:hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    /* Añade un efecto de sombra al pasar el ratón */
+}
+
+.form-schedule-option input[type="radio"]:checked {
+    border-color: var(--emerald-green);
+    /* Cambia el color del borde al estar seleccionado */
+}
+
+.form-schedule-option input[type="radio"]::before {
+    content: '';
+    display: block;
+    width: 15px;
+    /* Tamaño del punto interno */
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease;
+}
+
+.form-schedule-option input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(0.5);
+    /* Punto interno más pequeño cuando está seleccionado */
+    background-color: var(--fontColorEmphasis);
+    /* Cambia el color del punto interno cuando está seleccionado */
+}
+
+.btn-container {
+    width: 100%;
+}
+
+.form-submit {
+    background-color: var(--emerald-green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    /* Asegúrate de que el ancho sea automático */
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .contact-form {
+        padding: 30px;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .form-inputs .form-input {
+        width: 100%;
+    }
+
+    .form-textarea {
+        height: 200px;
+    }
+
+    .btn-container {
+        width: 155px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-form {
+        padding: 50px;
+        margin: 20px 200px;
+    }
+
+    .contact{
+        padding: 0 20px;
+    }
+
+    .contact p {
+        font-size: 24px;
+    }
+
+    .form-inputs {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .form-group {
+        gap: 10px;
+    }
+
+    .form-group label {
+        font-size: 18px;
+    }
+
+    .btn-container {
+        width: 155px;
+    }
+
+}

@@ -1,0 +1,44 @@
+.masonry-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+  margin: 27px 0;
+  gap: 20px;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+/* Elementos individuales de la galería */
+.gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-item {
+    margin-bottom: 10px;
+  }
+}

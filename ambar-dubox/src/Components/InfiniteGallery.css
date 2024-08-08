@@ -1,0 +1,84 @@
+.masonry-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+.infinite-scroll {
+  width: auto;
+  margin: 27px 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los elementos */
+  padding: 20px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.grid-item {
+  width: 100%;
+  max-width: 300px; /* Ajustar el ancho máximo de los elementos */
+  height: auto;
+  background: #d26;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex; /* Flexbox para centrar el contenido */
+  align-items: center; /* Centrar verticalmente el contenido */
+  justify-content: center; /* Centrar horizontalmente el contenido */
+}
+
+/* Estilos para las imágenes */
+.grid-item img {
+  width: 100%;
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  .masonry-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 20px;
+  }
+  
+  .infinite-scroll {
+    width: auto;
+    margin: 27px 0;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    overflow: hidden;
+  }
+  
+  .grid-item {
+    width: 100%;
+    max-width: 300px; /* Ajustar el ancho máximo de los elementos */
+    height: auto;
+    background: #d26;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+  }
+  
+  /* Estilos para las imágenes */
+  .grid-item img {
+    width: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    display: block;
+  }
+  
+}

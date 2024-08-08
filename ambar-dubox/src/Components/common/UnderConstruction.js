@@ -26,10 +26,10 @@ const UnderConstruction = () => {
           setDisplayedText((prev) => prev + text[currentIndex]);
           setCurrentIndex((prev) => prev + 1);
           setShowHammer(false); // Oculta el martillo después de colocar la letra
-        }, 500); // Tiempo del martillo antes de mostrar la letra
+        }, 300); // Tiempo del martillo antes de mostrar la letra
 
         return () => clearTimeout(letterTimer);
-      }, 1000); // Tiempo entre letras
+      }, 300); // Tiempo entre letras
 
       return () => clearTimeout(timer);
     } else {
@@ -44,10 +44,10 @@ const UnderConstruction = () => {
           setDisplayedText("");
           setCurrentIndex(0);
           setShowDots(false);
-        }, 5000); // Tiempo de repetición completa
+        }, 1000); // Tiempo de repetición completa
 
         return () => clearTimeout(resetTimer);
-      }, 1000); // Tiempo de espera antes de mostrar los puntos
+      }, 500); // Tiempo de espera antes de mostrar los puntos
 
       return () => clearTimeout(dotsTimer);
     }

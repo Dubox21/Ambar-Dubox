@@ -34,6 +34,20 @@ h3{
     text-align: center;
 }
 
+
+/* Ejemplo de CSS con degradado lineal con posiciones específicas */
+
+.gradient-background {
+    background: linear-gradient(
+      to bottom, 
+      #F5F5F5 0%, /* Color inicial */
+      rgba(255, 255, 255, 0.8) 16%, /* Blanco con 80% de opacidad */
+      rgba(0, 0, 0, 0.9) 79% /* Negro con 90% de opacidad */
+    );
+    height: auto; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+  }
+
 @media (min-width: 768px) {
     h2{
         font-size: 3rem !important;

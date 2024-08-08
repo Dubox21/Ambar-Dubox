@@ -8,6 +8,7 @@
     height: 550px;
     background-color: var(--black);
     margin: 27px 0;
+    position: relative;
 }
 
 @media (min-width: 768px) {
