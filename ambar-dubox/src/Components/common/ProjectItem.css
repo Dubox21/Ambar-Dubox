@@ -41,7 +41,7 @@
 .project-info i{
     cursor: pointer;
     color: var(--fontColorEmphasis);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .project-info i:hover{
@@ -66,5 +66,9 @@
     .text-center .logo svg {
         width: 77px;
         height: 77px;
+    }
+
+    .project-info i{
+        font-size: 1.5rem;
     }
 }
