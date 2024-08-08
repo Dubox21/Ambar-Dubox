@@ -32,6 +32,22 @@
     height: 50px;
 }
 
+.project-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-info i{
+    cursor: pointer;
+    color: var(--fontColorEmphasis);
+    font-size: 1.5rem;
+}
+
+.project-info i:hover{
+    color: var(--emerald-green);
+}
+
 @media (min-width: 768px) {
     .project-item h5 {
         font-size: 2rem;

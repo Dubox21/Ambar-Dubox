@@ -52,10 +52,12 @@
     font-weight: bold;
     transition: background-color 0.3s ease;
     animation: slideIn 1s ease-in-out;
+    z-index: 1;
 }
 
 .cta-button:hover {
     background-color: var(--fontColorEmphasis);
+    color: var(--emerald-green);
 }
 
 @media (min-width: 768px) {

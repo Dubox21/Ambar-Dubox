@@ -78,7 +78,7 @@ function ProjectsList() {
               <div className="row">
                 {group.map((project, subIndex) => (
                   <div key={subIndex} className={`col-${12 / itemsPerSlide}`}>
-                    <ProjectItem title={project.title} imageUrl={project.imageUrl} urlRepo={project.urlRepo} urlGit={project.urlGit}/>
+                    <ProjectItem title={project.title} imageUrl={project.imageUrl} urlRepo={project.urlRepo} urlGit={project.urlGit} techs={project.techs}/>
                   </div>
                 ))}
               </div>
