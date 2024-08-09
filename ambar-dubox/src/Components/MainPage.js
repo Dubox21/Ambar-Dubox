@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-// import Gallery from './Gallery';
+import Gallery from './Gallery';
 import Contact from './Contact';
 import UnderConstruction from './common/UnderConstruction';
 
@@ -19,8 +19,8 @@ function MainPage() {
         <Projects />
       </section>
        <section id="gallery">
-       {/* <Gallery /> */}
-       <UnderConstruction />
+        <Gallery />
+       {/* <UnderConstruction /> */}
       </section>
     <section id="contact">
         <Contact />

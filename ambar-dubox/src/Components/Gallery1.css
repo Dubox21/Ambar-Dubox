@@ -1,0 +1,107 @@
+.gradient-background {
+    background: linear-gradient(to bottom, #000, #333); /* Ejemplo de fondo con gradiente oscuro */
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin: 27px 0 0;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .infinite-scroll {
+    width: auto;
+    margin: 27px 0;
+  }
+  
+  .reload-icon {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    color: var(--fontColorEmphasis);
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .view-more {
+    padding-bottom: 10px;
+  }
+  
+  .view-more-button {
+    display: block;
+    margin: 0 auto;
+    padding: 3px 20px;
+    background-color: var(--emerald-green);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  @media (min-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .gallery-item {
+      height: 200px; /* Ajusta la altura si es necesario para pantallas más grandes */
+    }
+  
+    .reload-icon {
+      margin: 20px auto;
+      font-size: 40px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+  
+    .gallery-item {
+      height: 259px; /* Mantén una altura fija */
+    }
+  
+    .reload-icon {
+      margin: 20px auto;
+      font-size: 40px;
+    }
+  }
+  

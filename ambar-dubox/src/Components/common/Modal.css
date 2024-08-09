@@ -1,3 +1,7 @@
+body.modal-open {
+    overflow: hidden;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -14,7 +18,6 @@
 .modal-content {
     background: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
@@ -24,22 +27,33 @@
 .modal-content img {
     max-width: 100%;
     max-height: 600px;
-    object-fit: contain; /* Ajusta la imagen sin distorsionar, manteniendo la proporción */
+    object-fit: contain;
+    /* Ajusta la imagen sin distorsionar, manteniendo la proporción */
+    display: block;
+    cursor: zoom-in;
 }
 
 .modal-close {
     position: absolute;
     top: -50px;
-    right: 0;
+        right: 0;
     background: none;
     border: none;
     font-size: 3.5rem;
     cursor: pointer;
     color: var(--fontColorEmphasis);
+  
+    z-index: 1010;
 }
 
 .modal-close:hover {
     color: var(--emerald-green);
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+    .modal-content {
+        padding: 20px;
+    }
 }
